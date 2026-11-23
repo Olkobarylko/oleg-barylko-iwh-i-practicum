@@ -4,7 +4,13 @@ This repository is for the Integrating With HubSpot I: Foundations course. This 
 
 To read the full directions, please go to the [practicum instructions](https://app.hubspot.com/academy/l/tracks/1092124/1093824/5493?language=en).
 
-**Put your HubSpot developer test account custom objects URL link here:** https://app.hubspot.com/contacts/l/objects/${custom-obj-number}/views/all/list
+**Put your HubSpot developer test account custom objects URL link here:** https://app.hubspot.com/contacts/<test-account-id>/objects/<custom-object-id>/views/all/list
+
+## Running locally
+1. `npm install`
+2. Copy `.env.example` to `.env` and add your private app token and custom object type ID
+3. (Optional, first run only) `npm run setup` creates the Pets custom object and three records
+4. `npm start` and open http://localhost:3000
 
 ___
 ## Tips:
